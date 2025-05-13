@@ -1,0 +1,16 @@
+{
+  "name": "plonk-implementation-test",
+  "version": "1.0.0",
+  "description": "a project that implements two circuits using a single plonk trusted setup.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anthony-spedaliere",
+  "license": "MIT",
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "dotenv": "^16.5.0"
+  }
+}
