@@ -1,5 +1,10 @@
 pragma circom 2.2.2;
 
+/**
+ * @title threeFactorization
+ * @notice Multiplies three factors and outputs the value
+ */
+
 template Multiplier() {
     signal input a; 
     signal input b;
