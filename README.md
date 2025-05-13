@@ -1,4 +1,4 @@
-# Circom Password Hash
+# Circom PLONK Implementation Test
 
 A project that implements two circuits using a single PLONK trusted setup.
 
