@@ -19,12 +19,8 @@ template MembershipInclusion() {
     signal input pathElements[32];  // Merkle path elements
     signal input pathIndices[32];   // Merkle path indices
     
-    // Compute the hash of the password + salt
-    signal salted;
-    salted <== password + salt;
-    
     signal computedHash;
-    computedHash <== Poseidon(1)([salted]);
+    computedHash <== Poseidon(2)([password, salt]);
     
     // Verify the computed hash is in the merkle tree
     component merkleProof = MerkleTreeInclusionProof(32);
