@@ -22,7 +22,7 @@ The project implements two circuits:
 
 The `MembershipInclusion.circom` circuit allows users to prove they are members of a group without revealing their identity. It uses Ethereum addresses as member identifiers and combines them with a private salt in a Merkle tree structure to create an efficient and privacy-preserving membership system.
 
-## How It Works
+## How It Works - Membership Circuit
 
 ### Circuit Components
 
