@@ -42,4 +42,4 @@ template MembershipInclusion() {
  * @notice An instance of the membershipInclusion circuit
  * @dev Public signals are the merkle root and salt
  */
-component main {public [root, salt]} = membershipInclusion(); 
+component main {public [root, salt]} = MembershipInclusion(); 
