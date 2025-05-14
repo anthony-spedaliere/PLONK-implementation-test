@@ -12,9 +12,9 @@ include "circomlib/circuits/merkleTree.circom";
 template MembershipInclusion() {
     // Public inputs
     signal input root;  // Merkle root of all member hashes
-    signal input salt;  // Group salt
     
     // Private inputs
+    signal input salt;  // Group salt
     signal input password;  // Member's password
     signal input pathElements[32];  // Merkle path elements
     signal input pathIndices[32];   // Merkle path indices
@@ -36,6 +36,6 @@ template MembershipInclusion() {
 
 /**
  * @notice An instance of the membershipInclusion circuit
- * @dev Public signals are the merkle root and salt
+ * @dev Public signals are the merkle root
  */
-component main {public [root, salt]} = MembershipInclusion(); 
+component main {public [root]} = MembershipInclusion(); 
