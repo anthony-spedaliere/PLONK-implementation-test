@@ -9,7 +9,7 @@ include "circomlib/circuits/merkleTree.circom";
  * @dev Uses Poseidon hash for password hashing and Merkle tree for efficient membership verification
  */
 
-template membershipInclusion() {
+template MembershipInclusion() {
     // Public inputs
     signal input root;  // Merkle root of all member hashes
     signal input salt;  // Group salt
@@ -36,9 +36,6 @@ template membershipInclusion() {
         merkleProof.pathIndices[i] <== pathIndices[i];
     }
 
-    // Output signal indicating successful verification
-    signal output isValid;
-    isValid <== 1;  // This will only be 1 if all constraints are satisfied
 }
 
 /**

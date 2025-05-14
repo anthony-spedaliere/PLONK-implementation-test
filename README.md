@@ -18,9 +18,9 @@ The project implements two circuits:
    - Outputs the final product (x4)
    - Demonstrates basic arithmetic operations in Circom
 
-2. **Membership Circuit** (`2_circuit/membershipInclusion.circom`):
+2. **Membership Circuit** (`2_circuit/MembershipInclusion.circom`):
 
-The `membershipInclusion.circom` circuit allows users to prove they are members of a group without revealing their password or identity. It combines password hashing with Merkle tree verification to create an efficient and privacy-preserving membership system.
+The `MembershipInclusion.circom` circuit allows users to prove they are members of a group without revealing their password or identity. It combines password hashing with Merkle tree verification to create an efficient and privacy-preserving membership system.
 
 ## How It Works
 
@@ -55,8 +55,8 @@ The circuit takes the following inputs:
    - Confirms the reconstructed root matches the provided root
 
 3. **Output**
-   - `isValid`: Output signal that is 1 if verification succeeds
-   - If any constraint fails, the proof cannot be generated
+   - The circuit will only generate a valid proof if all constraints are satisfied
+   - No explicit output signal is needed as the proof itself serves as verification
 
 ## Usage
 
